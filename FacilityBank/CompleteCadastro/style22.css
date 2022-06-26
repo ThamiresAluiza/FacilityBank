@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Stix two text';
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    border-radius: 50px;
+    box-shadow: 0px 10px 40px #00000056;
+    
+}
+
+
+.form-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #55443D;
+    padding: 1rem;
+   
+    
+}
+
+
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:  column;
+    background-color: #FFFF;
+    padding: 3rem;
+    
+    
+    
+}
+
+.form-header{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #55443D;
+
+}
+
+
+
+.form-header h2::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #187c5b;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.logo{
+    margin: 3vw;
+
+}
+
+.input-group{
+    display: flex;
+    max-height: 10;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    
+}
+
+.input-box{
+    display: flex;
+    flex-direction:column;
+    color: #55443D;
+}
+
+
+.input-box input{
+    width: 15vw;
+    margin: 0.3rem 0;
+    padding: 0.3rem 1.2rem;
+    border: #55443D;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    
+}
+
+.continue-button button{
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #55443D;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.continue-button button:hover{
+    background-color: #55443D;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size:  0.93rem;
+    font-weight: 500;
+    color: #FFFF;
+}
+
+@media screen and (max-width: 1330px){
+    .form.image{
+        display: none;
+    }
+    .container{
+        width: 50%;
+    }
+    .form{
+        width:100%
+    }
+
+}
+
+@media screen and (max-width: 1064px){
+    .continue-button{
+        width: 100%;
+        height: auto;
+    }
+    .input-group{
+        flex-direction:column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+
+    .form-image{
+        display: none;
+    }
+}

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+
+body{
+    background-color: #3f3333;
+    color: #604e46;
+    font-family: poppinsregular; 
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+header{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+    letter-spacing: 4px;
+}
+
+.logo{
+    width: 50px;
+    flex-direction:unset;
+    display: inline-block;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+h1{
+    font-weight: 200;
+    color: #ffffff;
+}
+.logo{
+    width: 300px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+h2{
+    font-size: 55px;
+    line-height: 1px;
+    font-family: poppinsmedium;
+}
+
+span{
+    color: #e4d9d5;
+    letter-spacing: 1px;
+    
+}
+h3{
+    color:#ffffff
+
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+    color: #d1c9c7;
+}
+
+img{
+    width: 500px;
+}
+
+a{
+    color:#e4d9d5;
+}
+
+a:hover{
+    color:#ffffff;
+    transition: 0,3s all;
+}
+
+#inscreva-se-btn{
+    
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #64544d;
+    color: #ffffff;
+    
+}
+
+#inscreva-se-btn:hover{
+    background-color: #2e7b2c;
+    color: #ffffff;
+    border: #ffffff;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 100%;
+    background-color:#64544d;
+    color: #ffffff;
+    font-weight: bold;
+    border:none;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 10px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border-color: #55443D;
+    font-size: 15px;
+    border:none;
+}
+
+@media screen and (max-width: 760px){
+    header{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    h2{
+        font-size: 40px;
+    }
+
+    form{
+        margin: auto;
+        width: 70%;
+    }
+    input{
+        align-content: center;
+        
+    }
+
+    img{
+        display: none;
+    }
+
+    ul{
+        text-align: center;
+    }
+
+}
